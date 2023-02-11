@@ -9,10 +9,3 @@ class Category:
   description: Optional[str] = None
   is_active:Optional[bool] = True
   created_at:Optional[datetime] = field(default_factory=lambda: datetime.now())
-
-
-
-print(Category('Movie2'))
-print(Category('Movie2'))
-print(Category('Movie2'))
-print(Category('Movie2'))

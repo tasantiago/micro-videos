@@ -5,7 +5,7 @@ from category.domain.entities import Category
 class TestCategory(unittest.TestCase):
 
   def test_constructor(self):
-    category = Category('Movie', 'Some descrition', True, datetime.now())
+    category = Category(name='Movie', description='Some descrition', is_active=True, created_at=datetime.now())
     self.assertEqual(category.name, 'Movie')
     self.assertEqual(category.description, 'Some descrition')
     self.assertEqual(category.is_active, True)
