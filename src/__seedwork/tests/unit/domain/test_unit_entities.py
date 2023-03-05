@@ -1,8 +1,8 @@
 from abc import ABC
 from dataclasses import dataclass, is_dataclass
 import unittest
-from __seedwork.domain.entities import Entity
 
+from __seedwork.domain.entities import Entity
 from __seedwork.domain.value_objects import UniqueEntityId
 
 
