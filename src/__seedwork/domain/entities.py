@@ -2,10 +2,12 @@ from abc import ABC
 from dataclasses import asdict, dataclass, field
 from __seedwork.domain.value_objects import UniqueEntityId
 
+
 @dataclass(frozen=True)
 class Entity(ABC):
 
-    unique_entity_id: UniqueEntityId = field(default_factory=lambda: UniqueEntityId())
+    unique_entity_id: UniqueEntityId = field(
+        default_factory=lambda: UniqueEntityId())
 
     @property
     def id(self):
